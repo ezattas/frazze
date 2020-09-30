@@ -16,7 +16,7 @@ function animaScroll(){
 		segundo.style.opacity = "0";
 		terceiro.style.opacity = "0";
 	};
-	if(position >= 300){
+	if(position >= 260){
 		primeiro.style.opacity = "0";
 		segundo.style.opacity = "1";
 		terceiro.style.opacity = "0";

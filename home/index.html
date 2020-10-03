@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<script type="text/javascript">
+	function disableselect(e){
+		return
+		false;} document.onselectstart=new Function ("return false"); if (window.sidebar){document.onmousedown=disableselect;
+document.onclick=reEnable;}</script>
 <head>
 	<meta charset="utf-8">
 	<title>Home Frazze</title>
@@ -64,7 +69,7 @@
 				</div>
 			</div>
 		</footer>
-		<div id="sub-rodape"><p>Copyright © 2020 - Domain Name</p></div>
+		<!--<div id="sub-rodape"><p>Copyright © 2020 - Domain Name</p></div>-->
 	</section>
 	<script type="text/javascript" src="./index.js"></script>
 </body>

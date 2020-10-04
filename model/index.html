@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head lang="en">
+	<meta charset="utf-8">
+	<title>Model Page</title>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<script></script>
+</head>
+<body>
+	<div class="container">
+		<div class="general-box">
+			<div class="camada-um">
+				<div class="logo-tipo">
+					<img src="./img/ezattas.svg">
+				</div>
+				<div class="superior">
+					<div class="frase">
+						<p id="frase">The only thing I can do is keep quiet and sit this one out.</p>
+						<p id="traducao"><i>A única coisa que posso fazer é ficar quieto e esperar que isto passe.</i></p>
+					</div>
+					<div class="controle">
+						
+					</div>
+				</div>
+			</div>
+			<div class="camada-dois">
+				<div class="lado">
+					<div class="escala">
+						
+					</div>
+					<div class="porcento">
+						<p id="porcentagem">0%</p>
+					</div>
+				</div>
+				<div class="principal">
+					<div class="console">
+						<div class="quadro-1">
+							<div class="secao">
+								<h2>Phrasal Verbs</h2>		
+							</div>
+							<div class="box-1"></div>
+							<div class="box-2"></div>
+							<div class="acuracia" title="Nível de precisão do áudio detectado. Quanto menos ruído, maior precisão."><p>Precisão: 0%</p></div>
+						</div>
+						<div class="quadro-2">
+							<div class="acertos">
+								<h2>Acertos</h2>
+								<p class="acerto"></p>
+							</div>
+							<div class="erros">
+								<h2>Erros</h2>
+							</div>
+						</div>
+						<div class="quadro-3">
+							<div class="pesquisa">
+								<input type="text" name="pesquisa" placeholder="Search Pronunciation">
+								<button class="search">Search</button>
+							</div>
+							<div class="monitor">
+								<canvas></canvas>
+							</div>
+							<div class="barra-geral">
+								<div class="hidden"><p>Hide Translation</p></div>
+							</div>
+							<div class="barra-play">
+								<div class="button-control"><img src="./img/repeat.svg"></div>
+								<div class="button-control"><img src="./img/headphone.svg"></div>
+								<div class="button-control"><img src="./img/information.svg"></div>
+							</div>
+						</div>
+					</div>
+					<div class="bar-control">
+						<div class="botao-1"><button id="return">Return</button></div>
+						<div class="botao-2"><button id="player">Record Audio</button></div>
+						<div class="botao-3"><button id="next">Next</button></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="painel.js"></script>
+	<script src="index.js"></script>
+	<script src="api.js"></script>
+</body>
+</html>

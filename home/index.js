@@ -27,3 +27,5 @@ function animaScroll(){
 		terceiro.style.opacity = "1";
 	};
 }
+
+start();

@@ -14,6 +14,14 @@ window.addEventListener('DOMContentLoaded', function(){ //inicia a função some
 		recebe_audio.lang = 'en'; //idioma da gravação
 
 		recebe_audio.onstart = function(){
+			transcription = '';
+			num_trans = 0;
+			num_origi = 0;
+			array_origi = [];
+			array_trans = [];
+			acertos = [];
+			erros = [];
+			x = 0;
 			estado = true;
 			button.innerHTML = 'Stop';
 		};

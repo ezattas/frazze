@@ -1,6 +1,6 @@
 // Declaração de variáveis e matrizes
 var transcription = '';
-var original = 'the only thing I can do is keep quiet and sit this one out';
+var original;
 var num_trans;
 var num_origi;
 var array_origi = [];
@@ -13,9 +13,20 @@ var porcentagem = document.querySelector('#porcentagem'); //pega o console da po
 // Declaração de funções:
 
 function nota(){
-	array_origi = original.slice(1, -1);
-	array_origi = original.split(' ');
-	array_trans = transcription.split(' ');
+	original = phrasal[cont];
+	array_origi = original.replace('.', '');
+	array_origi = array_origi.replace(',', '');
+	array_origi = array_origi.replace("'", '');
+	array_origi = array_origi.replace('!', '');
+	array_origi = array_origi.replace('?', '');
+	array_trans = transcription.replace("'", '');
+	array_trans = array_trans.replace("'", '');
+	array_origi = array_origi.toLowerCase();
+	array_trans = array_trans.toLowerCase();
+	console.log(array_origi);
+	console.log(array_trans);
+	array_origi = array_origi.split(' ');
+	array_trans = array_trans.split(' ');
 	num_origi = array_origi.length;
 	num_trans = array_trans.length;
 	for(var i = 0;  i< array_origi.length; i++) {
@@ -26,8 +37,6 @@ function nota(){
     	}
 	}
 	x = ((acertos.length / num_origi) * 100);
-	console.log(acertos.length)
-	console.log(erros.length)
 	porcentagem.innerHTML = (Math.round(x) + "%"); //exibe no console a porcentagem de acerto
 	for(var i = 0; i <= acertos.length; i++){
 		

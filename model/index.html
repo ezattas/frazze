@@ -27,7 +27,7 @@
 			</div>
 			<div class="camada-dois">
 				<div class="lado">
-					<div class="escala">
+					<div class="escala" id="escala">
 						
 					</div>
 					<div class="porcento">
@@ -63,7 +63,7 @@
 								<canvas></canvas>
 							</div>
 							<div class="barra-geral">
-								<div class="hidden"><p>Hide Translation</p></div>
+								<div class="hidden" onclick="esconder()"><p id="hidden">Hide Translation</p></div>
 							</div>
 							<div class="barra-play">
 								<div class="button-control"><img onclick="repeatAudio(1)" src="./img/repeat.svg"></div>
@@ -82,8 +82,9 @@
 		</div>
 	</div>
 	<audio src="../audio.mp3" id="som"></audio> <!-- tag de audio nativo -->
-	<script src="painel.js"></script>
 	<script src="arrays.js"></script>
+	<script src="keys.js"></script>
+	<script src="control.js"></script>
 	<script src="index.js"></script>
 	<script src="api.js"></script>
 </body>

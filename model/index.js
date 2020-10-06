@@ -38,7 +38,13 @@ function nota(){
 	}
 	x = ((acertos.length / num_origi) * 100);
 	porcentagem.innerHTML = (Math.round(x) + "%"); //exibe no console a porcentagem de acerto
+	efeito(x);
 	for(var i = 0; i <= acertos.length; i++){
 		
 	}
+}
+
+function efeito(key){
+	var escala = document.getElementById("escala");
+	escala.style.background = `linear-gradient(to bottom, #102030 0%, #102030 ${100-key}%, #304050 0%, #304050 ${key}%)`;
 }

@@ -28,6 +28,10 @@ window.addEventListener('DOMContentLoaded', function(){ //inicia a função some
 			array_trans = [];
 			acertos = [];
 			erros = [];
+			h.innerText = "";
+			j.innerText = "";
+			k = "";
+			l = "";
 			x = 0;
 			estado = true;
 			button.innerHTML = 'Stop';

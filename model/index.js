@@ -9,7 +9,13 @@ var acertos = [];
 var erros = [];
 var x = 0;
 var y;
+var k = "";
+var l = "";
 var porcentagem = document.querySelector('#porcentagem'); //pega o console da porcentagem de acertos
+var j = document.getElementById("erros");
+var h = document.getElementById("acertos");
+var p = 0;
+var a = 0;
 // Declaração de funções:
 
 function nota(){
@@ -33,15 +39,36 @@ function nota(){
     	if(array_trans.indexOf(array_origi[i]) > -1) {
        		acertos.push(array_origi[i]);
     	}else{
-    		erros.push(array_origi[i]);
+    		erros.push(array_trans[i]);
     	}
 	}
 	x = ((acertos.length / num_origi) * 100);
 	porcentagem.innerHTML = (Math.round(x) + "%"); //exibe no console a porcentagem de acerto
 	efeito(x);
-	for(var i = 0; i <= acertos.length; i++){
-		
+	console.log(acertos);
+	console.log(erros);
+	for(var i = 0; i <= (acertos.length - 1); i++){
+		if(p == 0){
+			k = k + acertos[p];
+			p += 1;
+		}else{
+			k = k + " - " + acertos[p];
+			p += 1;
+		}
 	}
+	for(var i = 0; i <= (erros.length - 1); i++){
+		if(a == 0){
+			l = l + erros[a];
+			a += 1;
+		}else{
+			l = l + " - " + erros[a];
+			a += 1;
+		}
+	}
+	p = 0;
+	a = 0;
+	h.innerText = k;
+	j.innerText = l;
 }
 
 function efeito(key){

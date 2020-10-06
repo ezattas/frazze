@@ -33,7 +33,7 @@ button:hover{background: #506070}
 .quadro-2 h2, p{text-align: center;}
 .quadro-2 h2{margin-top: 0px; text-transform: uppercase; border-bottom: 1px solid #0a1a2a; line-height: 35px}
 .acertos h2{color: #0f0;}
-.erros h2{color: #f00;}
+.erros h2{color: #ff5300;}
 .quadro-3 input{width: 98%; height: 32px; outline: none; border: 1px solid #102030; position: relative; background: #304050; text-align: center; font-family: 'consolas'; color: #fff; font-size: 17px; text-transform: uppercase;}
 .pesquisa{width: 100%; height: 67px}
 .barra-play{width: 100%; height: 50px; background: transparent; display: flex;; margin-top: 1px}
@@ -50,7 +50,8 @@ button.search{border: none; height: 30px; font-size: 15px}
 .monitor canvas{width: 100%; height: 100%}
 .secao{width: 100%; height: 35px; background: transparent; text-align: center; margin-top: -15px; border-bottom: 1px solid #051525}
 .secao h2{font-size: 20px; line-height: 30px}
-.box-1{width: 100%; height: calc(100% - 140px); background: #0a1a2a}
-.acuracia{width: 100%; height: 30px; background: #102030;}
-.acuracia p{line-height: 17px; color: #0ff;}
-.progress{height: 20px; background: #405060}
+.boxes{width: 100%; height: calc(100% - 95px); background: #0a1a2a}
+.position{width: 100%; height: 40px; background: #405060; position: relative; margin-top: }
+#acertos{text-align: center; text-transform: uppercase; color: #0f0; margin: 10px;}
+.position{line-height: 40px}
+#erros{text-align: center; text-transform: uppercase; color: #ff5300; margin: 10px;}

@@ -16,6 +16,8 @@ function next(){
 		audioNativo.src = audio[cont];
 		porcentagem.innerHTML = ("0%");
 		labelPosition.innerHTML = `Position: ${cont + 1} of ${phrasal.length}`;
+		h.innerText = "";
+		j.innerText = "";
 		efeito(0);
 	}
 }
@@ -26,6 +28,8 @@ function retornar(){
 		labelFrase.innerHTML = frase[cont];
 		audioNativo.src = audio[cont];
 		labelPosition.innerHTML = `Position: ${cont + 1} of ${phrasal.length}`;
+		h.innerText = "";
+		j.innerText = "";
 		efeito(0);
 	}
 }
@@ -34,19 +38,16 @@ function playAudio(key){
 	var som = document.getElementById("som");
 	som.play();
 }
-var z = 0
 function repeatAudio(key){
-	if(z == 0){
+	if(true){
 		var som = document.getElementById("som");
 		som.play();
 		var timer = setInterval(function(){ 
 			var som = document.getElementById("som");
 			som.play();
-		}, 2500)
-		z += 1;
+		}, 2500);
 	}
 }
-
 
 function esconder(){
 	if(x == 0){

@@ -77,5 +77,5 @@ if (window.sidebar){
 }
 
 function menu(){
-	window.location.href = "https://frazze.ezattas.com/post/m";
+	window.location.href = "https://frazze.ezattas.com/menu";
 }

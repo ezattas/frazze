@@ -11,3 +11,8 @@ document.addEventListener('keydown', function(e){
     	}
     }
 }, false);
+
+function speak(){
+	utterance.text = document.getElementById("caixa-pesquisa").value;
+	speechSynthesis.speak(utterance);
+}

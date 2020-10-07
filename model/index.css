@@ -50,7 +50,7 @@ button.search{border: none; height: 30px; font-size: 15px}
 .monitor canvas{width: 100%; height: 100%}
 .secao{width: 100%; height: 35px; background: transparent; text-align: center; margin-top: -15px; border-bottom: 1px solid #051525}
 .secao h2{font-size: 20px; line-height: 30px}
-.boxes{width: 100%; height: calc(100% - 90px); background: #0a1a2a}
+.boxes{width: 100%; height: calc(100% - 100px); background: #0a1a2a}
 .position{width: 100%; height: 40px; background: #102030; position: relative; line-height: 30px}
 #acertos{text-align: center; text-transform: uppercase; color: #0f0; margin: 10px;}
 #erros{text-align: center; text-transform: uppercase; color: #ff5300; margin: 10px;}

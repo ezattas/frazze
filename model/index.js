@@ -16,6 +16,8 @@ var j = document.getElementById("erros");
 var h = document.getElementById("acertos");
 var p = 0;
 var a = 0;
+var utterance = new SpeechSynthesisUtterance();
+utterance.lang = "en";
 // Declaração de funções:
 
 function nota(){
@@ -29,8 +31,6 @@ function nota(){
 	array_trans = array_trans.replace("'", '');
 	array_origi = array_origi.toLowerCase();
 	array_trans = array_trans.toLowerCase();
-	console.log(array_origi);
-	console.log(array_trans);
 	array_origi = array_origi.split(' ');
 	array_trans = array_trans.split(' ');
 	num_origi = array_origi.length;
@@ -45,8 +45,6 @@ function nota(){
 	x = ((acertos.length / num_origi) * 100);
 	porcentagem.innerHTML = (Math.round(x) + "%"); //exibe no console a porcentagem de acerto
 	efeito(x);
-	console.log(acertos);
-	console.log(erros);
 	for(var i = 0; i <= (acertos.length - 1); i++){
 		if(p == 0){
 			k = k + acertos[p];
@@ -58,10 +56,14 @@ function nota(){
 	}
 	for(var i = 0; i <= (erros.length - 1); i++){
 		if(a == 0){
-			l = l + erros[a];
+			if(erros[a] != undefined){
+				l = l + erros[a];
+			}
 			a += 1;
 		}else{
-			l = l + " - " + erros[a];
+			if(erros[a] != undefined){
+				l = l + " - " + erros[a];
+			}
 			a += 1;
 		}
 	}
@@ -69,6 +71,8 @@ function nota(){
 	a = 0;
 	h.innerText = k;
 	j.innerText = l;
+	k = "";
+	l = "";
 }
 
 function efeito(key){

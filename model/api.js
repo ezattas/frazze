@@ -30,8 +30,6 @@ window.addEventListener('DOMContentLoaded', function(){ //inicia a função some
 			erros = [];
 			h.innerText = "";
 			j.innerText = "";
-			k = "";
-			l = "";
 			x = 0;
 			estado = true;
 			button.innerHTML = 'Stop';
@@ -52,7 +50,7 @@ window.addEventListener('DOMContentLoaded', function(){ //inicia a função some
 				var resultado = transcription || interim_transcript;
 			}
 			//transcription = event.results[0][0].transcript;
-			console.log(resultado);
+			//console.log(resultado);
 		};
 		button.addEventListener('click', function(e){
 			if(estado){

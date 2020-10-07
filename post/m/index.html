@@ -3,8 +3,8 @@
 <head lang="en">
 	<meta charset="utf-8">
 	<title>Model Page</title>
-	<link rel="stylesheet" type="text/css" href="./index.css">
-	<link rel="icon" type="image/svg" href="./img/ezattas.svg">
+	<link rel="stylesheet" type="text/css" href="../../css/index.css">
+	<link rel="icon" type="image/svg" href="../../img/ezattas.svg">
 	<script></script>
 </head>
 <body>
@@ -12,14 +12,14 @@
 		<div class="general-box">
 			<div class="camada-um">
 				<div class="logo-tipo">
-					<img src="./img/ezattas.svg">
+					<img src="../../img/ezattas.svg">
 				</div>
 				<div class="superior">
 					<div class="frase">
-						<p id="frase">The only thing I can do is keep quiet and sit this one out.</p>
+						<p id="frase"></p>
 					</div>
 					<div class="traducao">
-						<p id="traducao"><i>A única coisa que posso fazer é ficar quieto e esperar que isto passe.</i></p>
+						<p id="traducao"><i></i></p>
 					</div>
 					<div class="controle">
 						
@@ -42,7 +42,7 @@
 								<h2>Phrasal Verbs</h2>		
 							</div>
 							<div class="boxes">
-								<iframe src="../phrasal-verbs.html"></iframe>
+								<div class="menu" onclick="menu()">Menu</div>
 							</div>
 							<div class="position"><p id="position">Position: 0 of 0</p></div>
 						</div>
@@ -68,9 +68,9 @@
 								<div class="hidden" onclick="esconder()"><p id="hidden">Hide Translation</p></div>
 							</div>
 							<div class="barra-play">
-								<div class="button-control"><img onclick="repeatAudio(1)" src="./img/repeat.svg"></div>
-								<div class="button-control"><img onclick="playAudio(1)" src="./img/headphone.svg"></div>
-								<div class="button-control"><img src="./img/information.svg"></div>
+								<div class="button-control"><img onclick="repeatAudio(1)" src="../../img/repeat.svg"></div>
+								<div class="button-control"><img onclick="playAudio(1)" src="../../img/headphone.svg"></div>
+								<div class="button-control"><img src="../../img/information.svg"></div>
 							</div>
 						</div>
 					</div>
@@ -83,11 +83,11 @@
 			</div>
 		</div>
 	</div>
-	<audio src="../audio.mp3" id="som"></audio> <!-- tag de audio nativo -->
+	<audio src="" id="som"></audio> <!-- tag de audio nativo -->
 	<script src="arrays.js"></script>
-	<script src="keys.js"></script>
-	<script src="control.js"></script>
-	<script src="index.js"></script>
-	<script src="api.js"></script>
+	<script src="../../js/keys.js"></script>
+	<script src="../../js/control.js"></script>
+	<script src="../../js/index.js"></script>
+	<script src="../../js/api.js"></script>
 </body>
 </html>

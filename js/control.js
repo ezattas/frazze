@@ -75,3 +75,7 @@ if (window.sidebar){
 	document.onmousedown=disableselect;
 	document.onclick=reEnable;
 }
+
+function menu(){
+	window.location.href = "https://frazze.ezattas.com/post/m";
+}

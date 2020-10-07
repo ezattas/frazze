@@ -33,6 +33,7 @@ window.addEventListener('DOMContentLoaded', function(){ //inicia a função some
 			x = 0;
 			estado = true;
 			button.innerHTML = 'Stop';
+			efeito(0);
 		};
 		recebe_audio.onend = function(){
 			estado = false;

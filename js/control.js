@@ -7,6 +7,7 @@ var cont = 0;
 var x = 0;
 labelPhrasal.innerHTML = phrasal[cont];
 labelFrase.innerHTML = frase[cont];
+audioNativo.src = audio[cont];
 labelPosition.innerHTML = `Position: ${cont + 1} of ${phrasal.length}`;
 function next(){
 	if(cont < (phrasal.length - 1)){
@@ -77,5 +78,5 @@ if (window.sidebar){
 }
 
 function menu(){
-	window.location.href = "https://frazze.ezattas.com/menu";
+	window.location.href = "../../menu";
 }

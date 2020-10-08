@@ -16,3 +16,17 @@ function structure(key){
 function vocabulary(key){
 	window.location.href = `../post/v-${romanos[key]}`;
 }
+
+//desabilita a seleção de texto:
+function disableselect(e){
+		return false;
+} 
+document.onselectstart=new Function ("return false"); 
+if (window.sidebar){
+	document.onmousedown=disableselect;
+	document.onclick=reEnable;
+}
+
+function menu(){
+	window.location.href = "../../menu";
+}

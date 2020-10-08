@@ -1,20 +1,19 @@
-@font-face{font-family: primaria; src: url('../fonts/quicksand-bold.otf');}
 ::-webkit-scrollbar{width: 7px; background: #203040;}
 ::-webkit-scrollbar-thumb{border-radius: 10px; background: #345;}
-body{margin: 0; padding: 0; font-family: "Consolas"; color: #fff;}
+body{margin: 0; padding: 0; font-family: "Candara"; color: #fff; font: sans-serif;}
 .container{width: 100%; height: 100%; background: #152535; position: absolute; justify-content: center;}
 .general-box{width: 75%; height: 75%; position: relative; background: #203040; margin-left: 50%; transform: translateX(-50%); margin-top: 5%; border-radius: 3px; border: none; box-shadow: 0px 0px 20px #051525; border-top-left-radius: 60px; border-bottom-right-radius: 60px}
 .camada-um{display: flex; height: 150px}
 .camada-dois{display: flex; height: calc(100% - 150px)}
-.logo-tipo{background: transparent; width: 150px; height: 150px; border-right: 2px solid #152535; border-bottom: 2px solid #152535}
-.superior{background: transparent; width: calc(100% - 150px); height: 150px; border-bottom: 2px solid #152535}
-.lado{background: transparent; width: 150px; height: 100%; border-right: 2px solid #152535}
-.principal{background: transparent; width: calc(100% - 150px); height: 100%;}
-.escala{background: transparent; width: 100px; height: calc(100% - 100px); margin-left: 50%; transform: translateX(-50%); margin-top: 10px; border-radius: 2px; border: 1px solid #102030; background: linear-gradient(to bottom, #102030 0%, #102030 100%, #304050 0%, #304050 0%);}
-.porcento{background: transparent; width: 100px; height: 40px; margin-left: 50%; transform: translateX(-50%); margin-top: 5px; border-radius: 2px; border: 1px solid #102030;}
-.porcento p{font-family: 'Consolas'; text-align: center; line-height: 0px; font-size: 25px; color: #0f0; margin-top: 20px}
-.frase{background: transparent; width: 95%; height: 50px; margin-top: 10px;}
-.traducao{background: transparent; width: 95%; height: 50px; margin-top: -10px;}
+.logo-tipo{ width: 150px; height: 150px; border-right: 2px solid #152535; border-bottom: 2px solid #152535}
+.superior{ width: calc(100% - 150px); height: 150px; border-bottom: 2px solid #152535}
+.lado{ width: 150px; height: 100%; border-right: 2px solid #152535}
+.principal{ width: calc(100% - 150px); height: 100%;}
+.escala{ width: 100px; height: calc(100% - 100px); margin-left: 50%; transform: translateX(-50%); margin-top: 10px; border-radius: 2px; border: 1px solid #102030; background: linear-gradient(to bottom, #102030 0%, #102030 100%, #304050 0%, #304050 0%);}
+.porcento{ width: 100px; height: 40px; margin-left: 50%; transform: translateX(-50%); margin-top: 5px; border-radius: 2px; border: 1px solid #102030;}
+.porcento p{font-family: "Cambria"; text-align: center; line-height: 0px; font-size: 25px; color: #0f0; margin-top: 20px}
+.frase{ width: 95%; height: 50px; margin-top: 10px;}
+.traducao{ width: 95%; height: 50px; margin-top: -10px;}
 #frase{text-align: left; font-size: 22px; color: #ff0; margin-right: 10px; text-align: center; transition-duration: 0.5s}
 #traducao{top: 60px; font-size: 22px; margin-right: 10px; text-align: center;}
 #traducao i{text-align: center; transition-duration: 0.5s}
@@ -23,22 +22,22 @@ body{margin: 0; padding: 0; font-family: "Consolas"; color: #fff;}
 .botao-1{background: #333; width: 30%; height: 100%;}
 .botao-2{background: #333; width: 70%; height: 100%;}
 .botao-3{background: #333; width: 30%; height: 100%;}
-.quadro-1{background: transparent; width: 30%; height: 100%; border: 1px solid #203040;}
-.quadro-2{background: transparent; width: 70%; height: 100%; border: 1px solid #203040; display: flex;}
-.quadro-3{background: transparent; width: 30%; height: 100%; border: 1px solid #203040}
-button{width: 100%; height: 100%; background: #405060; cursor: pointer; border: none; outline: none; border: 1px solid #102030; font-family: 'Consolas'; text-transform: uppercase; font-size: 25px; font-weight: 600; color: #fff;}
+.quadro-1{ width: 30%; height: 100%; border: 1px solid #203040;}
+.quadro-2{ width: 70%; height: 100%; border: 1px solid #203040; display: flex;}
+.quadro-3{ width: 30%; height: 100%; border: 1px solid #203040}
+button{width: 100%; height: 100%; background: #405060; cursor: pointer; border: none; outline: none; border: 1px solid #102030; font-family: "Candara"; text-transform: uppercase; font-size: 25px; font-weight: 600; color: #fff;}
 button:hover{background: #506070}
-.acertos{background: transparent; width: 50%; height: 100%; border-right: 1px solid #0a1a2a}
-.erros{background: transparent; width: 50%; height: 100%; border-left: 1px solid #0a1a2a}
+.acertos{ width: 50%; height: 100%; border-right: 1px solid #0a1a2a}
+.erros{ width: 50%; height: 100%; border-left: 1px solid #0a1a2a}
 .quadro-2 h2, p{text-align: center;}
 .quadro-2 h2{margin-top: 0px; text-transform: uppercase; border-bottom: 1px solid #0a1a2a; line-height: 35px}
 .acertos h2{color: #0f0;}
 .erros h2{color: #ff5300;}
-.quadro-3 input{width: 98%; height: 32px; outline: none; border: 1px solid #102030; position: relative; background: #304050; text-align: center; font-family: 'consolas'; color: #fff; font-size: 17px; text-transform: uppercase;}
+.quadro-3 input{width: 98%; height: 32px; outline: none; border: 1px solid #102030; position: relative; background: #304050; text-align: center; font-family: "Candara"; color: #fff; font-size: 16px; text-transform: uppercase;}
 .pesquisa{width: 100%; height: 67px}
-.barra-play{width: 100%; height: 50px; background: transparent; display: flex;; margin-top: 1px}
-.button-control{width: 33%; height: 100%; background: transparent; border: 1px solid #051525}
-.barra-geral{width: 100%; height: 40px; background: transparent; }
+.barra-play{width: 100%; height: 50px;  display: flex;; margin-top: 1px}
+.button-control{width: 33%; height: 100%;  border: 1px solid #051525}
+.barra-geral{width: 100%; height: 40px;  }
 .hidden p{line-height: 10px;}
 .hidden{width: calc(100% - 2px); height: 100%; border: 1px solid #051525; cursor: pointer;}
 .hidden:hover{background: #203040;}
@@ -48,7 +47,7 @@ button.search{border: none; height: 30px; font-size: 15px}
 .search-control{width: 100%; height: 33px; background: #333}
 .monitor{width: 100%; height: calc(100% - 160px); background: #051020}
 .monitor canvas{width: 100%; height: 100%}
-.secao{width: 100%; height: 35px; background: transparent; text-align: center; margin-top: -15px; border-bottom: 1px solid #051525}
+.secao{width: 100%; height: 35px;  text-align: center; margin-top: -15px; border-bottom: 1px solid #051525}
 .secao h2{font-size: 20px; line-height: 30px}
 .boxes{width: 100%; height: calc(100% - 100px); background: #0a1a2a}
 .position{width: 100%; height: 40px; background: #102030; position: relative; line-height: 30px}

@@ -1,31 +1,18 @@
-const elementos = document.querySelectorAll("[data-anima]");
-const animacaoClass="animacao";
-var primeiro = document.getElementById("container-primario");
-var segundo = document.getElementById("container-secundario");
-var terceiro = document.getElementById("container-terciario");
+var romanos = [
+	"",
+	"i",
+	"ii",
+	"iii",
+	"iv",
+	"v"
+];
 
-function start(){
-	primeiro.style.opacity = "1";
-	console.log(position);
+function phrasal(key){
+	window.location.href = `../post/p-${romanos[key]}`;
 }
-
-function animaScroll(){
-	const position = window.pageYOffset;
-	if(position <= 50){
-		primeiro.style.opacity = "1";
-		segundo.style.opacity = "0";
-		terceiro.style.opacity = "0";
-	};
-	if(position >= 260){
-		primeiro.style.opacity = "0";
-		segundo.style.opacity = "1";
-		terceiro.style.opacity = "0";
-	};
-	if(position >= 800){
-		primeiro.style.opacity = "0";
-		segundo.style.opacity = "0";
-		terceiro.style.opacity = "1";
-	};
+function structure(key){
+	window.location.href = `../post/s-${romanos[key]}`;
 }
-
-start();
+function vocabulary(key){
+	window.location.href = `../post/v-${romanos[key]}`;
+}

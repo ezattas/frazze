@@ -32,6 +32,7 @@ window.addEventListener('DOMContentLoaded', function(){ //inicia a função some
 			j.innerText = "";
 			x = 0;
 			estado = true;
+			porcentagem.innerHTML = ("0%");
 			button.innerHTML = 'Stop';
 			efeito(0);
 		};

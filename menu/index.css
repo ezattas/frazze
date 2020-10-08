@@ -1,5 +1,6 @@
+/*@font-face{font-family: Poppins; src: url('../fonts/poppins.ttf');}*/
 *{margin: 0; padding: 0}
-body{width: 100%; height: 100%; background: #203040; font-family: "Consolas"; color: #fff;}
+body{width: 100%; height: 100%; background: #203040; font-family: "Candara"; color: #fff;}
 .container{width: 100%; height: 100%; background: #152535; position: absolute; justify-content: center;}
 .general{width: 50%; height: 50%; position: relative; background: #203040; margin-left: 50%; transform: translateX(-50%); margin-top: 10%; border-radius: 3px; border: none; box-shadow: 0px 0px 20px #051525; border-top-left-radius: 60px; border-bottom-right-radius: 60px}
 .titulo{width: 100%; height: 50px; background: transparent; display: flex; justify-content: center;}
@@ -7,5 +8,5 @@ body{width: 100%; height: 100%; background: #203040; font-family: "Consolas"; co
 .content-links{display: flex; width: 100%; height: calc(100% - 50px); background: transparent; justify-content: center;}
 .link{width: 33%; height: 100%; background: transparent; border-top: 1px solid #102030}
 #link-2{border-left: 1px solid #102030; border-right: 1px solid #102030;}
-a{display: block; text-align: center; padding: 3px; cursor: pointer;}
+a{display: block; text-align: center; padding: 2px; cursor: pointer;}
 a:hover{color: #a0b0c0;}

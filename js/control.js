@@ -1,4 +1,3 @@
-
 var labelPhrasal = document.getElementById("frase");
 var labelFrase = document.getElementById("traducao");
 var audioNativo = document.getElementById("som");
@@ -80,3 +79,6 @@ if (window.sidebar){
 function menu(){
 	window.location.href = "../../menu";
 }
+ function home(){
+ 	window.location.href = "../../home"
+ }
